@@ -8,15 +8,26 @@
 import Foundation
 
 
-struct Player: Decodable {
-    let data: [Lineups]
+struct PlayerData: Decodable {
+    let data: DataObj
+}
+
+struct DataObj: Decodable {
+    let lineups: [Lineups]
 }
 
 struct Lineups: Decodable, Identifiable {
     let id: Int
-    let player:
+    let player: Player
 }
 
-struct
+struct Player: Decodable {
+    let id: Int?
+    let name: String?
+    let displayName: String?
+    let dateOfBirth: String?
+    let gender: String?
+    let imagePath: String?
+}
 
 
