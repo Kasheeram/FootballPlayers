@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct PlayerListView: View {
     @StateObject var viewModel = PlayerViewModel()
     @State private var fixtureId = "18535517"
     
@@ -38,5 +38,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    PlayerListView()
 }

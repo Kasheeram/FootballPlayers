@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8917C9E02BE10EAB004A4B8D /* PlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8917C9DF2BE10EAB004A4B8D /* PlayerService.swift */; };
 		892F55DE2BE01D6D0008C8A2 /* FootballPlayersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F55DD2BE01D6D0008C8A2 /* FootballPlayersApp.swift */; };
-		892F55E02BE01D6D0008C8A2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F55DF2BE01D6D0008C8A2 /* ContentView.swift */; };
+		892F55E02BE01D6D0008C8A2 /* PlayerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F55DF2BE01D6D0008C8A2 /* PlayerListView.swift */; };
 		892F55E22BE01D6F0008C8A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 892F55E12BE01D6F0008C8A2 /* Assets.xcassets */; };
 		892F55E52BE01D6F0008C8A2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 892F55E42BE01D6F0008C8A2 /* Preview Assets.xcassets */; };
 		892F55EF2BE01D6F0008C8A2 /* FootballPlayersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F55EE2BE01D6F0008C8A2 /* FootballPlayersTests.swift */; };
@@ -44,9 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8917C9DF2BE10EAB004A4B8D /* PlayerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerService.swift; sourceTree = "<group>"; };
 		892F55DA2BE01D6D0008C8A2 /* FootballPlayers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootballPlayers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		892F55DD2BE01D6D0008C8A2 /* FootballPlayersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballPlayersApp.swift; sourceTree = "<group>"; };
-		892F55DF2BE01D6D0008C8A2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		892F55DF2BE01D6D0008C8A2 /* PlayerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerListView.swift; sourceTree = "<group>"; };
 		892F55E12BE01D6F0008C8A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		892F55E42BE01D6F0008C8A2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		892F55EA2BE01D6F0008C8A2 /* FootballPlayersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FootballPlayersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,6 +173,7 @@
 			children = (
 				895CBAD32BE0C0AF00AEED0D /* APICaller.swift */,
 				895CBAD72BE0CC1900AEED0D /* APIConstant.swift */,
+				8917C9DF2BE10EAB004A4B8D /* PlayerService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -196,7 +199,7 @@
 		895CBAD12BE0BFC900AEED0D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				892F55DF2BE01D6D0008C8A2 /* ContentView.swift */,
+				892F55DF2BE01D6D0008C8A2 /* PlayerListView.swift */,
 				895CBADD2BE0EEA200AEED0D /* PlayerItemView.swift */,
 			);
 			path = View;
@@ -364,13 +367,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8917C9E02BE10EAB004A4B8D /* PlayerService.swift in Sources */,
 				895CBAE72BE0F40B00AEED0D /* AppConstant.swift in Sources */,
 				895CBAD62BE0C2DD00AEED0D /* PlayerData.swift in Sources */,
 				895CBAEB2BE1019F00AEED0D /* DateHelper.swift in Sources */,
 				895CBAD42BE0C0AF00AEED0D /* APICaller.swift in Sources */,
 				895CBAE92BE0F6C300AEED0D /* PlayerCellViewModel.swift in Sources */,
 				895CBADE2BE0EEA200AEED0D /* PlayerItemView.swift in Sources */,
-				892F55E02BE01D6D0008C8A2 /* ContentView.swift in Sources */,
+				892F55E02BE01D6D0008C8A2 /* PlayerListView.swift in Sources */,
 				895CBADA2BE0D08300AEED0D /* PlayerViewModel.swift in Sources */,
 				895CBAD82BE0CC1900AEED0D /* APIConstant.swift in Sources */,
 				892F55DE2BE01D6D0008C8A2 /* FootballPlayersApp.swift in Sources */,
