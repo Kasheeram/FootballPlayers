@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8917C9E02BE10EAB004A4B8D /* PlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8917C9DF2BE10EAB004A4B8D /* PlayerService.swift */; };
+		8917C9E22BE16E78004A4B8D /* PlayerViewModelUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8917C9E12BE16E78004A4B8D /* PlayerViewModelUnitTests.swift */; };
 		892F55DE2BE01D6D0008C8A2 /* FootballPlayersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F55DD2BE01D6D0008C8A2 /* FootballPlayersApp.swift */; };
 		892F55E02BE01D6D0008C8A2 /* PlayerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F55DF2BE01D6D0008C8A2 /* PlayerListView.swift */; };
 		892F55E22BE01D6F0008C8A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 892F55E12BE01D6F0008C8A2 /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		8917C9DF2BE10EAB004A4B8D /* PlayerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerService.swift; sourceTree = "<group>"; };
+		8917C9E12BE16E78004A4B8D /* PlayerViewModelUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModelUnitTests.swift; sourceTree = "<group>"; };
 		892F55DA2BE01D6D0008C8A2 /* FootballPlayers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootballPlayers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		892F55DD2BE01D6D0008C8A2 /* FootballPlayersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballPlayersApp.swift; sourceTree = "<group>"; };
 		892F55DF2BE01D6D0008C8A2 /* PlayerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerListView.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				892F55EE2BE01D6F0008C8A2 /* FootballPlayersTests.swift */,
+				8917C9E12BE16E78004A4B8D /* PlayerViewModelUnitTests.swift */,
 			);
 			path = FootballPlayersTests;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				892F55EF2BE01D6F0008C8A2 /* FootballPlayersTests.swift in Sources */,
+				8917C9E22BE16E78004A4B8D /* PlayerViewModelUnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
