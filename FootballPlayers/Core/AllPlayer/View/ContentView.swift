@@ -15,33 +15,8 @@ struct ContentView: View {
         NavigationStack {
             ScrollView {
                 LazyVStack {
-                    ForEach(viewModel.playerLineups) { player in
-                        VStack {
-                            HStack(spacing: 4) {
-                                Image("kashee")
-                                    .resizable()
-                                    .frame(width: 100, height: 120)
-                                VStack(alignment: .leading, spacing: 4) {
-                                    Text(player.player.displayName ?? "")
-                                        .font(.title3)
-                                        .fontWeight(.semibold)
-                                    Text("DOB: \(player.player.dateOfBirth ?? "")")
-                                        .font(.footnote)
-                                    Text("Gender: \(player.player.gender ?? "")")
-                                        .font(.footnote)
-                                        
-                                }
-                                Spacer()
-                            }
-                                
-                        }
-                        .frame(maxWidth: .infinity)
-                        .background(Color(.white))
-                        .cornerRadius(10)
-                        .shadow(radius: 20)
-                        .opacity(0.9)
-                        .padding(.horizontal, 16)
-                        .padding(.vertical, 4)
+                    ForEach(viewModel.players) { player in
+                        PlayerItemView(player: player)
                     }
                 }
                 .navigationTitle(APIURL.footballFixtures("").description)

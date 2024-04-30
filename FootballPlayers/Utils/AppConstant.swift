@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+
+struct AppConstant {
+    static let dob = "DOB"
+    static let gender = "Gender"
+}
+
+
