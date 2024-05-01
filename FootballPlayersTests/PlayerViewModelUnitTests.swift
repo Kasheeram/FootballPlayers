@@ -9,16 +9,6 @@ import XCTest
 @testable import FootballPlayers
 
 final class PlayerViewModelUnitTests: XCTestCase {
-    
-//    var vm = PlayerViewModel()
-    
-    override func setUpWithError() throws {
-//        sut = PlayerViewModel()
-    }
-
-    override func tearDownWithError() throws {
-//        sut = nil
-    }
 
     @MainActor 
     func test_playerViewModel_fetchPlayers_success() async {
@@ -30,7 +20,6 @@ final class PlayerViewModelUnitTests: XCTestCase {
         await vm.fetchPlayers(id: fixerId)
         
         // then
-//        XCTAssertTrue(vm.isLoading) This is failing
         XCTAssertNotNil(vm.playerLineups)
         XCTAssertGreaterThan(vm.playerLineups.count, 0)
         XCTAssertGreaterThan(vm.players.count, 0)

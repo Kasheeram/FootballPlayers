@@ -20,7 +20,7 @@ enum APIURL {
     var value: String {
         switch self {
         case .football:
-            return "/movie/now_playing"
+            return "/football"
         case .footballFixtures(let fixtureId):
             return "/football/fixtures/\(fixtureId)?include=lineups.player"
         }

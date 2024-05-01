@@ -18,7 +18,6 @@ final class APICaller: PlayerService {
         guard let url = URL(string: urlString) else {
             throw CustomError.invalidUrl
         }
-        print("DEBUG: Fetching data...")
         do {
             let (data, _) = try await URLSession.shared.data(from: url)
             let decoder = JSONDecoder()
@@ -26,7 +25,6 @@ final class APICaller: PlayerService {
             let result = try decoder.decode(T.self, from: data)
             return result
         } catch {
-            print("DEBUG: Error: \(error.localizedDescription)")
             throw CustomError.invalidResponse
         }
         
