@@ -2,9 +2,9 @@
 This app is displaying list of football players, where it shows basic information of players like image name, gender, date of birth
 
 ## How to run
-1. clone the project
-2. open FootballPlayers.xcodeproj in xcode
-3. click on run button from xcode
+1. Clone the project
+2. Open FootballPlayers.xcodeproj in xcode
+3. Click on run button from xcode
 4. Congratulations you are done
 
 ## Technical skills used 
