@@ -15,7 +15,7 @@ This app is displaying list of football players, where it shows basic informatio
 5. Protocols
 6. Generic functions
 7. URL Session
-8. Async/await
+8. Async/await to call api concurrently 
 9. Singleton class
 10. SDWebImageSwiftUI
 11. Enum
