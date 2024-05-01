@@ -7,12 +7,13 @@
 
 import Foundation
 
-
+// protocol for pre define set of rules
 protocol PlayerService {
     func fetchGenericData<T: Decodable>(from endPoint: APIURL, expectedReturnType: T.Type) async throws -> T
 }
 
 
+// MARK: - Enum for list of urls and corresponding description
 enum APIURL {
     case football
     case footballFixtures(String)
@@ -36,7 +37,7 @@ enum APIURL {
     }
 }
 
-
+// MARK: - Enum for Custom Error so that we can show user friendly error message
 enum CustomError: Error {
     case invalidUrl
     case invalidData

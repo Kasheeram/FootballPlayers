@@ -42,5 +42,6 @@ struct PlayerItemView: View {
 }
 
 #Preview {
+    // Mock Data For Player
     PlayerItemView(player: PlayerCellViewModel(player: Player(id: 1, name: "Kashee", displayName: "K. Kushwaha", dateOfBirth: "08/07/1991", gender: "Male", imagePath: "")))
 }

@@ -31,6 +31,8 @@ final class PlayerCellViewModelTest: XCTestCase {
         XCTAssertNotEqual(playerCellViewModel.imagePath, nil)
         XCTAssertEqual(playerCellViewModel.dateOfBirth, "05/Jan/2022")
         XCTAssertNotEqual(playerCellViewModel.dateOfBirth, player.dateOfBirth)
+        XCTAssertNotEqual(playerCellViewModel.gender, player.gender)
+        XCTAssertEqual(playerCellViewModel.gender, "Male")
         
     }
 

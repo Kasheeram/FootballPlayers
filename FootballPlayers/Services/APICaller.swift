@@ -7,12 +7,14 @@
 
 import Foundation
 
+// MARK:- Singleton patern to call data from server
 final class APICaller: PlayerService {
     
     static let shared = APICaller()
     
     private init() {}
     
+    // Generic function to accept any data type and return the same
     func fetchGenericData<T: Decodable>(from endPoint: APIURL, expectedReturnType: T.Type) async throws -> T {
         let urlString = APIConstant.baseURL + endPoint.value + "&api_token=\(APIConstant.apiKey)"
         guard let url = URL(string: urlString) else {

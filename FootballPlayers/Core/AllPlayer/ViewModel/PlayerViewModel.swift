@@ -29,6 +29,7 @@ class PlayerViewModel: ObservableObject {
         }
     }
     
+    // Mapping Lineups to PlayerCellViewModel with manipulating data or adding business login as per the requirements
     private func mapLineupsData() {
         players = self.playerLineups.compactMap({PlayerCellViewModel(player: $0.player)})
     }

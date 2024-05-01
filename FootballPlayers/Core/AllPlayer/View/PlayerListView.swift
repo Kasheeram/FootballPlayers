@@ -16,22 +16,29 @@ struct PlayerListView: View {
             ScrollView {
                 LazyVStack {
                     ForEach(viewModel.players) { player in
+                        // card view for player with dependency injection
                         PlayerItemView(player: player)
                     }
                 }
-                .navigationTitle(APIURL.footballFixtures("").description)
-                if viewModel.isLoading {
-                    ProgressView()
-                        .scaleEffect(2.0, anchor: .center)
-                        .progressViewStyle(CircularProgressViewStyle(tint: .black))
-                    
-                }
             }
+            .overlay(
+                Group {
+                    // show loading view when fetching data from server
+                    if viewModel.isLoading {
+                        ProgressView()
+                            .scaleEffect(2.0, anchor: .center)
+                            .progressViewStyle(CircularProgressViewStyle(tint: .black))
+                    }
+                }
+            )
+            .navigationTitle(APIURL.footballFixtures("").description)
         }
         .task {
+            // call fetching data from server
             await viewModel.fetchPlayers(id: fixtureId)
         }
         .alert(isPresented: $viewModel.shouldShowError) {
+            // show alert message when any error occured
             Alert(title: Text("Important message"), message: Text(viewModel.errorMessage ?? ""), dismissButton: .default(Text("Got it!")))
         }
     }
