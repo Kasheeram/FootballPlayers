@@ -46,10 +46,10 @@ enum CustomError: Error {
     
     var localizeDescription: String {
         switch self {
-            case .invalidUrl: return "Invalid URL"
-            case .invalidData: return "Invalid Data"
-            case .noData: return "No Data"
-            case .invalidResponse: return "Invalid Response"
+        case .invalidUrl: return "Invalid URL"
+        case .invalidData: return "Invalid Data"
+        case .noData: return "No Data"
+        case .invalidResponse: return "Invalid Response"
         }
     }
     

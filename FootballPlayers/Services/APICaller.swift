@@ -9,9 +9,7 @@ import Foundation
 
 // MARK:- Singleton patern to call data from server
 final class APICaller: PlayerService {
-    
     static let shared = APICaller()
-    
     private init() {}
     
     // Generic function to accept any data type and return the same

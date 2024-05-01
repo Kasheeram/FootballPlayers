@@ -25,11 +25,11 @@ struct PlayerItemView: View {
                         .font(.footnote)
                     Text("\(AppConstant.gender): \(player.gender)")
                         .font(.footnote)
-                        
+                    
                 }
                 Spacer()
             }
-                
+            
         }
         .frame(maxWidth: .infinity)
         .background(Color(.white))

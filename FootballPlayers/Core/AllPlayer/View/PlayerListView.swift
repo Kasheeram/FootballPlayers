@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PlayerListView: View {
-    @StateObject var viewModel = PlayerViewModel()
+    @ObservedObject var viewModel = PlayerViewModel()
     @State private var fixtureId = "18535517"
     
     var body: some View {
