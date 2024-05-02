@@ -19,6 +19,7 @@ This app is displaying list of football players, where it shows basic informatio
 9. Singleton class
 10. SDWebImageSwiftUI
 11. Enum
+12. Proper documentation
 
 
 
