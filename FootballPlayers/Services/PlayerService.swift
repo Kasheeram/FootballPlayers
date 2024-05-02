@@ -7,7 +7,7 @@
 
 import Foundation
 
-// protocol for pre define set of rules
+/// Protocol for pre define set of rules
 protocol PlayerService {
     func fetchGenericData<T: Decodable>(from endPoint: APIURL, expectedReturnType: T.Type) async throws -> T
 }

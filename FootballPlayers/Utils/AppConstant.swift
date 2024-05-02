@@ -8,6 +8,7 @@
 import Foundation
 
 
+/// Store the whole app related constant
 struct AppConstant {
     static let dob = "DOB"
     static let gender = "Gender"

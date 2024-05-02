@@ -7,7 +7,6 @@
 
 import Foundation
 
-// All extra business logic will go here
 class PlayerCellViewModel: Identifiable {
     let id: Int
     let name: String

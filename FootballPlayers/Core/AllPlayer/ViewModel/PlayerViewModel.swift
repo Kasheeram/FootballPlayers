@@ -15,6 +15,8 @@ class PlayerViewModel: ObservableObject {
     @Published var isLoading = false
     @Published var shouldShowError = false
     
+    /// To fetch players list
+    /// - Parameter id: this is the fixure id
     func fetchPlayers(id: String) async {
         isLoading = true
         do {
@@ -29,7 +31,7 @@ class PlayerViewModel: ObservableObject {
         }
     }
     
-    // Mapping Lineups to PlayerCellViewModel with manipulating data or adding business login as per the requirements
+    /// Mapping Lineups to PlayerCellViewModel with manipulating data or adding business login as per the requirements
     private func mapLineupsData() {
         players = self.playerLineups.compactMap({PlayerCellViewModel(player: $0.player)})
     }
